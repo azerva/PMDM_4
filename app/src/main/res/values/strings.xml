@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">Tarea04PMDMZervaMorenoAlexandre</string>
+
+    <!-- MAIN ACTIVITY -->
+    <string name="tittle_main">Dibuja 3.0</string>
+    <string name="btn_create">Crear Dibujo</string>
+
+    <!-- PAINT ACTIVITY -->
+    <string name="btn_back">Atrás</string>
+    <string name="btn_clean">Limpiar</string>
+
+
+
+</resources>

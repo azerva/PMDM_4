@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".PaintActivity">
+
+    <com.example.tarea04pmdmzervamorenoalexandre.Lienzo
+        android:id="@+id/lienzo"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/layout_buttons"
+        android:layout_marginBottom="0dp" />
+
+    <LinearLayout
+        android:id="@+id/layout_buttons"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="#818181"
+        android:layout_alignParentBottom="true">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_margin="5dp"
+            android:layout_gravity="center_horizontal">
+
+            <ImageButton
+                android:id="@+id/paint_black"
+                style="@style/buttonPaint"
+                android:src="@drawable/negro"
+                android:background="@android:color/transparent"/>
+            <ImageButton
+                android:id="@+id/paint_red"
+                style="@style/buttonPaint"
+                android:src="@drawable/rojo"
+                android:background="@android:color/transparent"/>
+            <ImageButton
+                android:id="@+id/paint_yellow"
+                style="@style/buttonPaint"
+                android:src="@drawable/oro"
+                android:background="@android:color/transparent"/>
+            <ImageButton
+                android:id="@+id/paint_star"
+                style="@style/buttonPaint"
+                android:src="@drawable/star"
+                android:background="@android:color/transparent"/>
+            <ImageButton
+                android:id="@+id/paint_face"
+                style="@style/buttonPaint"
+                android:src="@drawable/foto_cara"
+                android:background="@android:color/transparent"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:layout_marginBottom="5dp">
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btn_back_paint"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:layout_weight="1"
+                android:layout_margin="5dp"
+                android:text="@string/btn_back"
+                android:background="@drawable/design_btn_paint"
+                android:onClick="goMainActivity"/>
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btn_clean_paint"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:layout_weight="1"
+                android:layout_margin="5dp"
+                android:text="@string/btn_clean"
+                android:background="@drawable/design_btn_paint"
+                android:onClick="cleanPaint"/>
+
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>
